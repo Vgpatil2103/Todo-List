@@ -11,7 +11,7 @@ body{
     width: 100vw;
 }
 .container{
-    min-height: 500px;
+    min-height: 300px;
     max-height: 900px;
     width: 400px;
     background-color: rgb(209, 197, 197);
@@ -29,41 +29,58 @@ body{
 }
 .task-input{
     padding: 20px;
+    display: flex;
    
     
 }
-form{
-    display: flex;
-}
-button{
+
+.task-input>button{
     background-color: rgb(151, 151, 177);
     width: 90px;
     border-radius: 10px;
-    margin-left: -40px;
+    position: relative;
+    right:0;
 }
 #task{
     width: 100%;
-    height: 40px;
+    height: 50px;
     border: none;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
+    position: relative;
+    outline: none;
+    font-size: 20px;
+}
+ul li{
+    background-color: white;
+   
+  
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    list-style: none;
+    box-sizing: border-box;
+    height: 38px;
     
 }
-ul{
-    padding: 20px;
-}
-.task-list{
-    padding: 20px;
-    padding-top: 30px;
-   
-}
 li{
-    background-color: white;
-    border-radius: 20px;
-    list-style-type: none;
+    padding: 10px;
 }
-li::before{
-    content: "";
-   
+span{
+    padding-left: 10px;
 }
+.delete{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+   margin-top: -21px;
+}
+.trash:hover{
+   box-shadow: 4px 3px 10px rgb(168, 163, 163);
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
